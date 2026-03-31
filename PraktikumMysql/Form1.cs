@@ -9,6 +9,10 @@ namespace PraktikumMysql
         MySqlConnection conn;
         MySqlCommand cmd;
 
+        public Form1()
+        {
+            InitializeComponent();
+        }
         private void koneksi()
         {
             conn = new MySqlConnection(
@@ -89,6 +93,8 @@ namespace PraktikumMysql
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        
     }
 
 }
